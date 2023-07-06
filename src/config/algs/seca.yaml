@@ -1,0 +1,33 @@
+# --- SeCA specific parameters ---
+
+action_selector: "gumbel"
+epsilon_start: .5
+epsilon_finish: .01
+epsilon_anneal_time: 100000
+mask_before_softmax: True
+
+runner: "parallel"
+
+buffer_size: 32
+batch_size_run: 32
+batch_size: 32
+
+td_lambda: 0.8
+
+# update the target network every {} training steps
+target_update_interval: 200
+
+agent_output_type: "pi_logits"
+learner: "seca_learner"
+mixing_embed_dim: 64
+hypernet_layers: 2
+entropy_coef: 0.005
+each_ig_step_num: 5
+
+timestep_change_order: True       # False means fix order with init
+cal_order_len: 1                  # change order per step
+critic_q: True                    # False means dueling network attempt
+actionprob_control_order: False   # SeCA-Prob
+actionentr_control_order: False   # SeCA-Entro
+
+name: "seca"
