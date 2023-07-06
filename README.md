@@ -1,8 +1,8 @@
 # Code for SeCA
 
-This instruction hosts the PyTorch implementation of "**Cooperative Multi-Agent Reinforcement Learning**". The implementation is based on the [PyMARL](https://github.com/oxwhirl/pymarl) framework and [SMAC](https://github.com/oxwhirl/smac). 
+This instruction hosts the PyTorch implementation of SeCA accompanying the paper "**Sequential Cooperative Multi-Agent Reinforcement Learning**" (AAMAS 2023, [https://www.southampton.ac.uk/~eg/AAMAS2023/pdfs/p485.pdf](https://www.southampton.ac.uk/~eg/AAMAS2023/pdfs/p485.pdf)). SeCA is a sequential credit assignment method that factorizes and simplifies the complex interaction analysis of multi-agent systems into a sequential evaluation process for more efficient learning.
 
-All of our SMAC experiments are based on the latest PyMARL utilizing SC2.4.6.10. The underlying dynamics are sufficiently different, so you cannot compare runs across various versions. 
+The implementation is based on the [PyMARL](https://github.com/oxwhirl/pymarl) framework and [SMAC](https://github.com/oxwhirl/smac). All of our SMAC experiments are based on the latest PyMARL utilizing SC2.4.6.10. The underlying dynamics are sufficiently different, so you cannot compare runs across various versions. 
 
 
 ## Setup
